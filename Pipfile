@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+config = "*"
+djangorestframework = "*"
+django-cors-headers = "*"
+pyjwt = "*"
+openpyxl = "*"
+django-environ = "*"
+awsebcli = "*"
+
+[dev-packages]
+black = "*"
+awsebcli = "*"
+
+[requires]
+python_version = "3.10"
+
+[pipenv]
+allow_prereleases = true
