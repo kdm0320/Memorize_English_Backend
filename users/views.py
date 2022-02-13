@@ -1,5 +1,3 @@
-import email
-from turtle import update
 from django.contrib.auth import authenticate
 from django.conf import settings
 from rest_framework import status
