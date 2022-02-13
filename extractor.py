@@ -1,8 +1,8 @@
-import openpyxl
+# import openpyxl
 import unicodedata
 import os
+import openpyxl
 import django
-
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
 django.setup()
 from words import models
