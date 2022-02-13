@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = bool(env('DEBUG'))
 DEBUG = True
-ALLOWED_HOSTS = ["https://voca-back.herokuapp.com"]
+ALLOWED_HOSTS = ["https://voca-back.herokuapp.com/"]
 CORS_ALLOW_METHODS = (
     'DELETE',
     'GET',
@@ -73,8 +73,8 @@ THIRD_PARTY_APPS = [
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS + THIRD_PARTY_APPS
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleherpoware",
     'whitenoise.middleware.WhiteNoiseMiddleware',
-    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
