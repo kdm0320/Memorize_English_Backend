@@ -28,9 +28,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = bool(env('DEBUG'))
 DEBUG = False
-ALLOWED_HOSTS = ['*']
-CORS_ALLOW_HEADERS = ['*']
-CORS_ORIGIN_WHITELIST = ("http://localhost:3000",)
+ALLOWED_HOSTS = ['https://memovoca.shop/',"http://localhost:3000",]
+CORS_ALLOW_HEADERS = ['https://memovoca.shop/',"http://localhost:3000",]
+CORS_ORIGIN_WHITELIST = ("http://localhost:3000","https://memovoca.shop/")
 
 # Application definition
 DJANGO_APPS = [
