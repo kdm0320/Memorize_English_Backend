@@ -29,8 +29,24 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # DEBUG = bool(env('DEBUG'))
 DEBUG = True
 ALLOWED_HOSTS = ["*"]
-CORS_ALLOW_HEADERS = ['https://memovoca.shop/']
-CORS_ORIGIN_WHITELIST = ("https://memovoca.shop/")
+CORS_ALLOW_METHODS = (
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+)
+CORS_ALLOW_HEADERS = [    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',]
+CORS_ORIGIN_WHITELIST = ("https://memovoca.shop")
 
 # Application definition
 DJANGO_APPS = [
