@@ -29,8 +29,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # DEBUG = bool(env('DEBUG'))
 DEBUG = False
 ALLOWED_HOSTS = ['https://memovoca.shop',"http://localhost:3000",]
-CORS_ALLOW_HEADERS = ['https://memovoca.shop',"http://localhost:3000",]
-CORS_ORIGIN_WHITELIST = ("http://localhost:3000","https://memovoca.shop")
+CORS_ALLOW_HEADERS = ['https://memovoca.shop']
+CORS_ORIGIN_WHITELIST = ("https://memovoca.shop")
 
 # Application definition
 DJANGO_APPS = [
@@ -50,7 +50,7 @@ PROJECT_APPS = [
 THIRD_PARTY_APPS = [
     "rest_framework",
     "corsheaders",
-    "dj_database_url"
+    "dj_database_url",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS + THIRD_PARTY_APPS
