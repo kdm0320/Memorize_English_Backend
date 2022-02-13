@@ -70,7 +70,7 @@ class UserViewSet(ModelViewSet):
         password = request.data.get("password")
         if not username or not password:
             return Response(statue=status.HTTP_400_BAD_REQUEST)
-
+        print(username,password)
         user = authenticate(username=username, password=password)
         if user:
             encoded_jwt = jwt.encode(
