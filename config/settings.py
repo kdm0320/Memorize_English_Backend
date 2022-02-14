@@ -14,7 +14,6 @@ from distutils.debug import DEBUG
 from pathlib import Path
 import os,environ
 import dj_database_url
-import django_heroku
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -29,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = bool(env('DEBUG'))
 DEBUG = True
-ALLOWED_HOSTS = ["https://voca-back.herokuapp.com/"]
+ALLOWED_HOSTS = ["*.herokuapp.com"]
 CORS_ALLOW_METHODS = (
     'DELETE',
     'GET',
