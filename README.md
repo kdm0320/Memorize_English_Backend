@@ -42,6 +42,7 @@ Django-RestFramework를 사용했습니다.
 - ### 프로젝트 URL : https://memovoca.shop
 
 - ### Frontend: https://github.com/kdm0320/Memorize_English_Frontend.git
+- ### 개발용: https://github.com/kdm0320/Memorize_English
 
 ## Reference
 
